@@ -1,0 +1,21 @@
+﻿composer update
+composer install
+
+composer require appzcoder/crud-generator --dev
+composer require laravelcollective/html
+composer dump-autoload
+php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider"
+
+php artisan migrate
+php artisan db:seed
+php artisan make:controller <ControllerName>
+php artisan make:model <ModelName> -m
+php artisan make:migration <MigrationName>
+php artisan serve
+php artisan crud:generate Posts --fields="title#string; content#text; category#select#options=technology,tips,health" --view-path=admin --controller-namespace=Admin --route-group=admin
+php artisan make:migration create_users_table --create=users
+php artisan make:migration add_votes_to_users_table --table=users
+https://laravelcollective.com/docs/5.4/html
+
+npm install --no-bin-links
+npm run dev
