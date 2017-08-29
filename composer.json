@@ -5,10 +5,9 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": ">=5.6.4",
+    "php": ">=5.6.1",
     "appzcoder/crud-generator": "^2.0",
     "barryvdh/laravel-snappy": "^0.3.3",
-    "doctrine/dbal": "^2.6",
     "h4cc/wkhtmltoimage-amd64": "0.12.x",
     "h4cc/wkhtmltopdf-amd64": "0.12.x",
     "hieu-le/active": "^3.4",

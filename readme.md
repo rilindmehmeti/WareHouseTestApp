@@ -53,6 +53,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Do this before starting app
 
 - Create a database with name warehouse also a user with name: warehouse and password: 123456
-- Be sure you are using php 7.1
+- Install php curl **apt-get install php5.6-curl**
 - run **php artisan db:seed** for creating admin with email admin@warehouse.com and password 123456
 - link storage running **php artisan storage:link**

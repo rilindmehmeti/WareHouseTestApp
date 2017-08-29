@@ -14,8 +14,12 @@ class UpdateImgForeign extends Migration
     public function up()
     {
         Schema::table('images', function (Blueprint $table) {
-            $table->integer('device_id')->unsigned()->change();
-			$table->foreign('device_id')->references('id')->on('devices');
+            $table->dropColumn('device_id');
+        });
+
+        Schema::table('images', function (Blueprint $table) {
+            $table->integer('device_id')->unsigned();
+            $table->foreign('device_id')->references('id')->on('devices');
         });
     }
 
